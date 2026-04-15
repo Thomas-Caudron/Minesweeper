@@ -41,11 +41,49 @@ python -m http.server 8000
 
 1. Clonez le dépôt
 ```bash
-git clone https://github.com/votre-utilisateur/demineur.git
-cd demineur
+git clone https://github.com/Thomas-Caudron/Minesweeper.git
+cd Minesweeper
 ```
 
 2. Ouvrez `index.html` dans votre navigateur
+
+## 🔄 Mise à Jour Automatique
+
+Le projet inclut des outils pour vérifier et télécharger automatiquement les mises à jour.
+
+### Avec PowerShell (Windows recommandé)
+
+**Vérification avec demande de confirmation:**
+```powershell
+.\check-updates.ps1
+```
+
+**Mise à jour automatique:**
+```powershell
+.\check-updates.ps1 -AutoUpdate
+```
+
+**Surveillance continue (vérifie toutes les heures):**
+```powershell
+.\check-updates.ps1 -Interval 3600 -AutoUpdate
+```
+
+### Avec Node.js (Multi-plateforme)
+
+**Vérification avec demande de confirmation:**
+```bash
+node check-updates.js
+```
+
+**Mise à jour automatique:**
+```bash
+node check-updates.js --auto
+```
+
+**Surveillance continue (vérifie toutes les heures):**
+```bash
+node check-updates.js --auto --interval 3600
+```
 
 ## 💻 Architecture
 
